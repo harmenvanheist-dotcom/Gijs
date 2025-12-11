@@ -175,14 +175,14 @@ export default function Home() {
           {/* Prompt Bar */}
           <div style={{ display: 'flex', gap: '16px' }}>
             <input
-              style={{ flex: 1, height: '56px', fontSize: '1.1rem' }}
+              style={{ flex: 1, height: '42px', fontSize: '1rem' }}
               placeholder="Describe the style (e.g. Modern Scandinavian, Warm Lighting, Evening)..."
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
             />
             <button
               className="btn btn-primary"
-              style={{ height: '56px', padding: '0 40px', fontSize: '1.1rem' }}
+              style={{ height: '42px', padding: '0 24px', fontSize: '1rem' }}
               onClick={handleGenerate}
               disabled={isGenerating || !selectedImage}
             >
